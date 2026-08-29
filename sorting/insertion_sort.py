@@ -6,10 +6,11 @@ def sort_using_insertion(numbers: list[int]) -> list[int]:
     Sorts a list of integers in ascending order using the insertion sort algorithm.
 
     Logic:
-    The algorithm builds the sorted array one element at a time. It iterates through
-    the list, and for each element, it compares it with the previous elements,
-    swapping them if they are out of order, until the element is in its correct 
-    sorted position relative to the already processed elements.
+        The algorithm builds the sorted array one element at a time. 
+        It iterates through the list, and for each element, 
+        it compares it with the previous elements, swapping them 
+        if they are out of order, until the element is in its correct 
+        sorted position relative to the already processed elements.
 
     Time Complexity:
         - Best Case: O(n) when the list is already sorted.
