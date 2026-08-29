@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
 import pytest
 
+from sorting.merge_sort import sort_using_merge
+from sorting.bubble_sort import sort_using_bubble
 from sorting.insertion_sort import sort_using_insertion
 from sorting.selection_sort import sort_using_selection
-from sorting.bubble_sort import sort_using_bubble
+
+params = [sort_using_insertion, sort_using_selection,
+          sort_using_bubble, sort_using_merge]
 
 
-@pytest.fixture(params=[sort_using_insertion, sort_using_selection, sort_using_bubble])
+@pytest.fixture(params=params)
 def sort_func(request):
     """
     Fixture to parameterize tests with different sorting algorithms.
