@@ -3,9 +3,10 @@ import pytest
 
 from sorting.insertion_sort import sort_using_insertion
 from sorting.selection_sort import sort_using_selection
+from sorting.bubble_sort import sort_using_bubble
 
 
-@pytest.fixture(params=[sort_using_insertion, sort_using_selection])
+@pytest.fixture(params=[sort_using_insertion, sort_using_selection, sort_using_bubble])
 def sort_func(request):
     """
     Fixture to parameterize tests with different sorting algorithms.
