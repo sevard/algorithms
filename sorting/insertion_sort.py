@@ -30,7 +30,7 @@ def sort_using_insertion(numbers: list[int]) -> list[int]:
 
         curr = indx
 
-        # gets the smallest element and inserts it at current index
+        # insert the current element into its correct position in the sorted prefix
         while curr > 0 and numbers[curr] < numbers[curr - 1]:
             # swaps current smaller element with the element before it
             numbers[curr], numbers[curr - 1] = numbers[curr - 1], numbers[curr]
