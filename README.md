@@ -61,8 +61,7 @@ python -m pytest problems/utests/test_tree_sum.py::test_my_specific_case
 * **`-k` (Keyword Match):** Runs tests that match a specific substring in their name.
 
   ```bash
-  python -m pytest -k "longest"
-  pytest -v sorting/utests/test_sorting.py -k "sort_using_bubble"
+  python -m pytest -v sorting/utests/test_sorting.py -k "sort_using_bubble"
   ```
 
 * **`--lf` (Last Failed):** Only runs the tests that failed during the last run.
