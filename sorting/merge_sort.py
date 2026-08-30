@@ -28,7 +28,7 @@ def sort_using_merge(numbers: list[int]) -> list[int]:
     """
     nums_len = len(numbers)
     if nums_len <= 1:
-        return numbers
+        return numbers.copy()
 
     mid = nums_len // 2
     r_list = sort_using_merge(numbers[mid:])
