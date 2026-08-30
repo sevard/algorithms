@@ -31,11 +31,11 @@ def sort_using_selection(numbers: list[int]) -> list[int]:
     """
     arr_len = len(numbers)
     for i in range(arr_len):
-        # assume the smalest num is at the current position
+        # assume the smallest num is at the current position
         min_index = i
 
         # loop over the rest of the elements
-        for j in range(i, arr_len):
+        for j in range(i + 1, arr_len):
             if numbers[min_index] > numbers[j]:
                 min_index = j
         # swap
