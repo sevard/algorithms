@@ -18,6 +18,8 @@ def sort_func(request):
     Provides the following sorting functions sequentially to the tests:
     - `sort_using_insertion` (Insertion Sort)
     - `sort_using_selection` (Selection Sort)
+    - `sort_using_bubble` (Bubble Sort)
+    - `sort_using_merge` (Merge Sort)
     """
     return request.param
 
