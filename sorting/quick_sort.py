@@ -29,10 +29,10 @@ def _sort_list_interval(numbers: list[int], start: int, end: int) -> None:
     # Start partitioning
     while start_ptr < end_ptr:
 
-        # find element from left that is greater than pivot
+        # find element from left that is greater than or equal to pivot
         while numbers[start_ptr] < pivot and start_ptr < end_ptr:
             start_ptr += 1
-        # find element from right that is less or equal pivot
+        # find element from right that is strictly less than pivot
         while numbers[end_ptr] >= pivot and start_ptr < end_ptr:
             end_ptr -= 1
 

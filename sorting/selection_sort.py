@@ -38,8 +38,11 @@ def sort_using_selection(numbers: list[int]) -> list[int]:
         for j in range(i + 1, arr_len):
             if numbers[min_index] > numbers[j]:
                 min_index = j
-        # swap
-        numbers[i], numbers[min_index] = numbers[min_index], numbers[i]
+        
+        # swap only if a smaller element was found 
+        # (avoids redundant self-assignment when min_index == i)
+        if min_index != i:
+            numbers[i], numbers[min_index] = numbers[min_index], numbers[i]
 
     return numbers
 
