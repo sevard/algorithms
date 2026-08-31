@@ -13,6 +13,6 @@ pythonpath = [".", "deep_first_search"]
 testpaths = [
     "problems/utests",
     "sorting/utests",
-    "deep_first_search/utests",
+    "dfs/utests",
     "two_pointers/basics/utests",
 ]
