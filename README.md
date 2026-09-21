@@ -69,3 +69,9 @@ python -m pytest problems/utests/test_tree_sum.py::test_my_specific_case
   ```bash
   python -m pytest --lf
   ```
+
+### 7. Run a specific python script
+
+```bash
+uv run python -m dfs.reconstruct_btree_v2
+```

@@ -9,10 +9,10 @@ dependencies = [
 ]
 
 [tool.pytest.ini_options]
-pythonpath = [".", "deep_first_search"]
+pythonpath = [".", "dfs"]
 testpaths = [
     "problems/utests",
     "sorting/utests",
-    "deep_first_search/utests",
+    "dfs/utests",
     "two_pointers/basics/utests",
 ]
